@@ -1,0 +1,1262 @@
+{
+  "nfl" : {
+    "players" : {
+      "-Mv_6NIxnES-lF4I7-cW" : {
+        "age" : 25,
+        "name" : "Josh Allen",
+        "position" : "QB",
+        "teamId" : "-MvZcDbzWIjB_x5NYzvt",
+        "value" : 5
+      },
+      "-Mv_6TQDqkEv-y6-s-iv" : {
+        "age" : 28,
+        "name" : "Stefon Diggs",
+        "position" : "WR",
+        "teamId" : "-MvZcDbzWIjB_x5NYzvt",
+        "value" : 5
+      },
+      "-Mv_6aj0fNHliEnSwyTu" : {
+        "age" : 24,
+        "name" : "Devin Singletary",
+        "position" : "RB",
+        "teamId" : "-MvZcDbzWIjB_x5NYzvt",
+        "value" : 3
+      },
+      "-Mv_7BILWoI6SEp0xqJb" : {
+        "age" : 27,
+        "name" : "Tre'Davious White",
+        "position" : "CB",
+        "teamId" : "-MvZcDbzWIjB_x5NYzvt",
+        "value" : 4
+      },
+      "-Mv_7WEkQ07FKpDW_65a" : {
+        "age" : 22,
+        "name" : "Zach Wilson",
+        "position" : "QB",
+        "teamId" : "-MvZoUtnCHbgDYD2hvBa",
+        "value" : 3
+      },
+      "-Mv_7_4Dx5BMA0z8W0BL" : {
+        "age" : 22,
+        "name" : "Michael Carter",
+        "position" : "RB",
+        "teamId" : "-MvZd6iEJ1BBmZRdm8n8",
+        "value" : 4
+      },
+      "-Mv_7hpEdQAxkQ10vPF8" : {
+        "age" : 24,
+        "name" : "Denzel Mims",
+        "position" : "WR",
+        "teamId" : "-MvZd6iEJ1BBmZRdm8n8",
+        "value" : 4
+      },
+      "-Mv_7pfTacAUyVNV38wb" : {
+        "age" : 24,
+        "name" : "Quinnen Williams",
+        "position" : "DT",
+        "teamId" : "-MvZd6iEJ1BBmZRdm8n8",
+        "value" : 5
+      },
+      "-Mv_IPMeGHw3aKajZ7gs" : {
+        "age" : 23,
+        "name" : "Tua Tagovailoa",
+        "position" : "QB",
+        "teamId" : "-MvZnjS3x6v8CzsrojRo",
+        "value" : 2
+      },
+      "-Mv_IVHBZfju_Yxz9px5" : {
+        "age" : 23,
+        "name" : "Jaylen Waddle",
+        "position" : "WR",
+        "teamId" : "-MvZnjS3x6v8CzsrojRo",
+        "value" : 5
+      },
+      "-Mv_IbxNviEREIqVwiEb" : {
+        "age" : 26,
+        "name" : "Mike Gesicki",
+        "position" : "TE",
+        "teamId" : "-MvZnjS3x6v8CzsrojRo",
+        "value" : 4
+      },
+      "-Mv_Ijco4gsV7hVI4he6" : {
+        "age" : 29,
+        "name" : "Byron Jones",
+        "position" : "CB",
+        "teamId" : "-MvZvPJ_hFqLmQtcfpoS",
+        "value" : 3
+      },
+      "-Mv_IxjYhC_eiuO7dHs2" : {
+        "age" : 23,
+        "name" : "Mac Jones",
+        "position" : "QB",
+        "teamId" : "-MvZyO53KG2BKAopdih7",
+        "value" : 3
+      },
+      "-Mv_J1eDP7oC49Asqaeb" : {
+        "age" : 24,
+        "name" : "Damien Harris",
+        "position" : "RB",
+        "teamId" : "-MvZoUtnCHbgDYD2hvBa",
+        "value" : 4
+      },
+      "-Mv_J9kMuuDBRrJXmn_d" : {
+        "age" : 25,
+        "name" : "Jakobi Meyers",
+        "position" : "WR",
+        "teamId" : "-MvZoUtnCHbgDYD2hvBa",
+        "value" : 3
+      },
+      "-Mv_JI-05HyzF7fFAUZm" : {
+        "age" : 29,
+        "name" : "Matt Judon",
+        "position" : "OLB",
+        "teamId" : "-MvZoUtnCHbgDYD2hvBa",
+        "value" : 5
+      },
+      "-Mv_JmruJII90ivPx7SG" : {
+        "age" : 26,
+        "name" : "Patrick Mahomes",
+        "position" : "QB",
+        "teamId" : "-MvZqapfDI8tpRo0loLH",
+        "value" : 5
+      },
+      "-Mv_JvCWW7jCvrDkeVpd" : {
+        "age" : 22,
+        "name" : "Clyde Edwards-Helaire",
+        "position" : "RB",
+        "teamId" : "-MvZqapfDI8tpRo0loLH",
+        "value" : 3
+      },
+      "-Mv_K2REgMa3ku0kEPLZ" : {
+        "age" : 32,
+        "name" : "Travis Kelce",
+        "position" : "TE",
+        "teamId" : "-MvZqapfDI8tpRo0loLH",
+        "value" : 5
+      },
+      "-Mv_KGCoehYVVbE9gmLb" : {
+        "age" : 29,
+        "name" : "Chris Jones",
+        "position" : "DE",
+        "teamId" : "-MvZqapfDI8tpRo0loLH",
+        "value" : 4
+      },
+      "-Mv_KR5OOJgz7fpySX1s" : {
+        "age" : 30,
+        "name" : "Derek Carr",
+        "position" : "QB",
+        "teamId" : "-MvZrZXPNWSW_Or5YueZ",
+        "value" : 3
+      },
+      "-Mv_Kh2ufUW4k_LTYFuX" : {
+        "age" : 23,
+        "name" : "Josh Jacobs",
+        "position" : "RB",
+        "teamId" : "-MvZrZXPNWSW_Or5YueZ",
+        "value" : 4
+      },
+      "-Mv_Km2DGUg9v0ybTzXR" : {
+        "age" : 26,
+        "name" : "Hunter Renfrow",
+        "position" : "WR",
+        "teamId" : "-MvZrZXPNWSW_Or5YueZ",
+        "value" : 4
+      },
+      "-Mv_KueT8ATSivYcz6dd" : {
+        "age" : 32,
+        "name" : "K.J. Wright",
+        "position" : "OLB",
+        "teamId" : "-MvZrZXPNWSW_Or5YueZ",
+        "value" : 4
+      },
+      "-Mv_LGswGGNJ7FOIkW1G" : {
+        "age" : 23,
+        "name" : "Justin Herbert",
+        "position" : "QB",
+        "teamId" : "-MvZtIvjUWrdMOwYgyQf",
+        "value" : 5
+      },
+      "-Mv_LMHwu2bECtu7vrEW" : {
+        "age" : 26,
+        "name" : "Austin Ekeler",
+        "position" : "RB",
+        "teamId" : "-MvZtIvjUWrdMOwYgyQf",
+        "value" : 5
+      },
+      "-Mv_LS7pZhrp9lz3qoPS" : {
+        "age" : 29,
+        "name" : "Keenan Allen",
+        "position" : "WR",
+        "teamId" : "-MvZtIvjUWrdMOwYgyQf",
+        "value" : 5
+      },
+      "-Mv_Lbos1_CNUnLqOJ34" : {
+        "age" : 25,
+        "name" : "Derwin James",
+        "position" : "SS",
+        "teamId" : "-MvZtIvjUWrdMOwYgyQf",
+        "value" : 5
+      },
+      "-Mv_LrTYhM9FBIhiavve" : {
+        "age" : 25,
+        "name" : "Drew Lock",
+        "position" : "QB",
+        "teamId" : "-MvZsU4AEUHVga-Q_y8I",
+        "value" : 2
+      },
+      "-Mv_M19r5ee3teV-MUvX" : {
+        "age" : 26,
+        "name" : "Courtland Sutton",
+        "position" : "WR",
+        "teamId" : "-MvZsU4AEUHVga-Q_y8I",
+        "value" : 4
+      },
+      "-Mv_MCgYeJGL3q8uAXgS" : {
+        "age" : 21,
+        "name" : "Javonte Williams",
+        "position" : "RB",
+        "teamId" : "-MvZsU4AEUHVga-Q_y8I",
+        "value" : 4
+      },
+      "-Mv_MJGu8K80Ve7R6A7I" : {
+        "age" : 25,
+        "name" : "Bradley Chubb",
+        "position" : "OLB",
+        "teamId" : "-MvZsU4AEUHVga-Q_y8I",
+        "value" : 4
+      },
+      "-Mv_Mkudgs-bjaUz58F7" : {
+        "age" : 28,
+        "name" : "Dak Prescott",
+        "position" : "QB",
+        "teamId" : "-MvZuLJzlcFeDb7rKegN",
+        "value" : 4
+      },
+      "-Mv_MqWfoOOLcF6oCJh5" : {
+        "age" : 24,
+        "name" : "Tony Pollard",
+        "position" : "RB",
+        "teamId" : "-MvZuLJzlcFeDb7rKegN",
+        "value" : 4
+      },
+      "-Mv_Mxrpsgysvo9JXF4z" : {
+        "age" : 28,
+        "name" : "Amari Cooper",
+        "position" : "WR",
+        "teamId" : "-MvZuLJzlcFeDb7rKegN",
+        "value" : 4
+      },
+      "-Mv_N5l7lXy2BhUerdZm" : {
+        "age" : 22,
+        "name" : "Micah Parsons",
+        "position" : "OLB",
+        "teamId" : "-MvZuLJzlcFeDb7rKegN",
+        "value" : 5
+      },
+      "-Mv_NMwJ6va5cC1KqCPV" : {
+        "age" : 25,
+        "name" : "Saquon Barkley",
+        "position" : "RB",
+        "teamId" : "-MvZvPJ_hFqLmQtcfpoS",
+        "value" : 3
+      },
+      "-Mv_Nff2rq7o5kxEzb1i" : {
+        "age" : 27,
+        "name" : "Leonard Williams",
+        "position" : "DE",
+        "teamId" : "-MvZvPJ_hFqLmQtcfpoS",
+        "value" : 3
+      },
+      "-Mv_O7JjozeRmWtbixMT" : {
+        "age" : 29,
+        "name" : "Sterling Shepard",
+        "position" : "WR",
+        "teamId" : "-MvZvPJ_hFqLmQtcfpoS",
+        "value" : 4
+      },
+      "-Mv_OIYnIqz2UDMyd2WT" : {
+        "age" : 24,
+        "name" : "Daniel Jones",
+        "position" : "QB",
+        "teamId" : "-MvZnjS3x6v8CzsrojRo",
+        "value" : 2
+      },
+      "-Mv_OWcayDOCjh5pLuEQ" : {
+        "age" : 23,
+        "name" : "Jalen Hurts",
+        "position" : "QB",
+        "teamId" : "-MvZvwoTQVDmOxXMt7ae",
+        "value" : 2
+      },
+      "-Mv_Oap0sPAszGa8Sb5p" : {
+        "age" : 24,
+        "name" : "Miles Sanders",
+        "position" : "RB",
+        "teamId" : "-MvZvwoTQVDmOxXMt7ae",
+        "value" : 4
+      },
+      "-Mv_OrMxgaIEHkOppdYt" : {
+        "age" : 23,
+        "name" : "DeVonta Smith",
+        "position" : "WR",
+        "teamId" : "-MvZvwoTQVDmOxXMt7ae",
+        "value" : 3
+      },
+      "-Mv_Oym0Kb8AQNtqiIo_" : {
+        "age" : 31,
+        "name" : "Darius Slay",
+        "position" : "CB",
+        "teamId" : "-MvZvwoTQVDmOxXMt7ae",
+        "value" : 5
+      },
+      "-Mv_PBJg8JRDXepaz499" : {
+        "age" : 28,
+        "name" : "Taylor Heinicke",
+        "position" : "QB",
+        "teamId" : "-MvZwa80vXCTavvaUq3t",
+        "value" : 3
+      },
+      "-Mv_PGzklKLwBMkOcw9y" : {
+        "age" : 26,
+        "name" : "Terry McLaurin",
+        "position" : "WR",
+        "teamId" : "-MvZwa80vXCTavvaUq3t",
+        "value" : 5
+      },
+      "-Mv_POr2O4iIUK7qs1BP" : {
+        "age" : 23,
+        "name" : "Antonio Gibson",
+        "position" : "RB",
+        "teamId" : "-MvZwa80vXCTavvaUq3t",
+        "value" : 4
+      },
+      "-Mv_Pmpf1a8DQQQW557e" : {
+        "age" : 28,
+        "name" : "Landon Collins",
+        "position" : "SS",
+        "teamId" : "-MvZwa80vXCTavvaUq3t",
+        "value" : 4
+      },
+      "-Mv_Q1GBuOVYViYFDMiE" : {
+        "age" : 34,
+        "name" : "Matthew Stafford",
+        "position" : "QB",
+        "teamId" : "-MvZxfT_0cIDEnLCwpoV",
+        "value" : 4
+      },
+      "-Mv_Q6uDQkuMGn7pDO8l" : {
+        "age" : 22,
+        "name" : "Cam Akers",
+        "position" : "RB",
+        "teamId" : "-MvZxfT_0cIDEnLCwpoV",
+        "value" : 4
+      },
+      "-Mv_QEcEVPI0XOrQ3Nze" : {
+        "age" : 28,
+        "name" : "Cooper Kupp",
+        "position" : "WR",
+        "teamId" : "-MvZxfT_0cIDEnLCwpoV",
+        "value" : 5
+      },
+      "-Mv_QVjsM71QTX0Dlwpv" : {
+        "age" : 32,
+        "name" : "Von Miller",
+        "position" : "OLB",
+        "teamId" : "-MvZxfT_0cIDEnLCwpoV",
+        "value" : 4
+      },
+      "-Mv_Qm1sGs1UHVlp6KPv" : {
+        "age" : 24,
+        "name" : "Kyler Murray",
+        "position" : "QB",
+        "teamId" : "-MvZyO53KG2BKAopdih7",
+        "value" : 4
+      },
+      "-Mv_R5PCmJNl3Am_rGY6" : {
+        "age" : 26,
+        "name" : "Budda Baker",
+        "position" : "SS",
+        "teamId" : "-MvZd6iEJ1BBmZRdm8n8",
+        "value" : 4
+      },
+      "-Mv_RGogTgmWpgckte6h" : {
+        "age" : 29,
+        "name" : "DeAndre Hopkins",
+        "position" : "WR",
+        "teamId" : "-MvZyO53KG2BKAopdih7",
+        "value" : 5
+      },
+      "-Mv_Rcpl_7MZHzf4EThb" : {
+        "age" : 30,
+        "name" : "Jimmy Garoppolo",
+        "position" : "QB",
+        "teamId" : "-MvZz8n4DXxRX_cUiqqM",
+        "value" : 3
+      },
+      "-Mv_Rj4YsU2G_qBl0l4u" : {
+        "age" : 23,
+        "name" : "Elijah Mitchell",
+        "position" : "RB",
+        "teamId" : "-MvZz8n4DXxRX_cUiqqM",
+        "value" : 4
+      },
+      "-Mv_RvY8HKGsiIMQRu13" : {
+        "age" : 26,
+        "name" : "Deebo Samuel",
+        "position" : "WR",
+        "teamId" : "-MvZz8n4DXxRX_cUiqqM",
+        "value" : 5
+      },
+      "-Mv_S48w5rlCR4pbgx-l" : {
+        "age" : 24,
+        "name" : "Nick Bosa",
+        "position" : "DE",
+        "teamId" : "-MvZz8n4DXxRX_cUiqqM",
+        "value" : 5
+      },
+      "-Mv_SEewSHhTYwl6POYo" : {
+        "age" : 33,
+        "name" : "Russell Wilson",
+        "position" : "QB",
+        "teamId" : "-MvZzmHhY2Ckla6KQ3HM",
+        "value" : 5
+      },
+      "-Mv_SL9q1Zx8rPZQp4QK" : {
+        "age" : 29,
+        "name" : "Tyler Lockett",
+        "position" : "WR",
+        "teamId" : "-MvZzmHhY2Ckla6KQ3HM",
+        "value" : 4
+      },
+      "-Mv_SbbQM5m1Nr6vRqtT" : {
+        "age" : 26,
+        "name" : "Jamal Adams",
+        "position" : "SS",
+        "teamId" : "-MvZzmHhY2Ckla6KQ3HM",
+        "value" : 4
+      },
+      "-Mv_SpJlcGltRxBxgrG5" : {
+        "age" : 27,
+        "name" : "Chris Carson",
+        "position" : "RB",
+        "teamId" : "-MvZzmHhY2Ckla6KQ3HM",
+        "value" : 4
+      },
+      "-Mvu7TSkmtIkk_qexUat" : {
+        "age" : 25,
+        "name" : "Chase Edmonds",
+        "position" : "RB",
+        "teamId" : "-MvZyO53KG2BKAopdih7",
+        "value" : 3
+      }
+    },
+    "teams" : {
+      "-MvZcDbzWIjB_x5NYzvt" : {
+        "coach" : "Sean McDermott",
+        "conference" : "AFC",
+        "division" : "AFC East",
+        "established" : 1960,
+        "image" : "https://upload.wikimedia.org/wikipedia/en/thumb/7/77/Buffalo_Bills_logo.svg/260px-Buffalo_Bills_logo.svg.png",
+        "losses" : 6,
+        "stadium" : "Highmark Stadium",
+        "superbowlTitles" : 0,
+        "teamName" : "Buffalo Bills",
+        "ties" : 0,
+        "wins" : 11
+      },
+      "-MvZd6iEJ1BBmZRdm8n8" : {
+        "coach" : "Robert Saleh",
+        "conference" : "AFC",
+        "division" : "AFC East",
+        "established" : 1960,
+        "image" : "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/New_York_Jets_logo.svg/260px-New_York_Jets_logo.svg.png",
+        "losses" : 13,
+        "stadium" : "MetLife Stadium",
+        "superbowlTitles" : 1,
+        "teamName" : "New York Jets",
+        "ties" : 0,
+        "wins" : 4
+      },
+      "-MvZnjS3x6v8CzsrojRo" : {
+        "coach" : "Mike McDaniel",
+        "conference" : "AFC",
+        "division" : "AFC East",
+        "established" : 1966,
+        "image" : "https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Miami_Dolphins_logo.svg/260px-Miami_Dolphins_logo.svg.pngets_logo.svg.png",
+        "losses" : 8,
+        "stadium" : "Hard Rock Stadium",
+        "superbowlTitles" : 2,
+        "teamName" : "Miami Dolphins",
+        "ties" : 0,
+        "wins" : 9
+      },
+      "-MvZoUtnCHbgDYD2hvBa" : {
+        "coach" : "Bill Belichick",
+        "conference" : "AFC",
+        "division" : "AFC East",
+        "established" : 1960,
+        "image" : "https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/New_England_Patriots_logo.svg/260px-New_England_Patriots_logo.svg.png",
+        "losses" : 7,
+        "stadium" : "Gillette Stadium",
+        "superbowlTitles" : 6,
+        "teamName" : "New England Patriots",
+        "ties" : 0,
+        "wins" : 10
+      },
+      "-MvZqapfDI8tpRo0loLH" : {
+        "coach" : "Andy Reid",
+        "conference" : "AFC",
+        "division" : "AFC West",
+        "established" : 1960,
+        "image" : "https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Kansas_City_Chiefs_logo.svg/260px-Kansas_City_Chiefs_logo.svg.png",
+        "losses" : 5,
+        "stadium" : "Arrowhead Stadium",
+        "superbowlTitles" : 6,
+        "teamName" : "Kansas City Chiefs",
+        "ties" : 0,
+        "wins" : 12
+      },
+      "-MvZrZXPNWSW_Or5YueZ" : {
+        "coach" : "Josh McDaniels",
+        "conference" : "AFC",
+        "division" : "AFC West",
+        "established" : 1960,
+        "image" : "https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Las_Vegas_Raiders_logo.svg/260px-Las_Vegas_Raiders_logo.svg.png",
+        "losses" : 7,
+        "stadium" : "Allegiant Stadium",
+        "superbowlTitles" : 3,
+        "teamName" : "Las Vegas Raiders",
+        "ties" : 0,
+        "wins" : 10
+      },
+      "-MvZsU4AEUHVga-Q_y8I" : {
+        "coach" : "Nathaniel Hackett",
+        "conference" : "AFC",
+        "division" : "AFC West",
+        "established" : 1960,
+        "image" : "https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Denver_Broncos_logo.svg/260px-Denver_Broncos_logo.svg.png",
+        "losses" : 10,
+        "stadium" : "Empower Field at Mile High",
+        "superbowlTitles" : 3,
+        "teamName" : "Denver Broncos",
+        "ties" : 0,
+        "wins" : 7
+      },
+      "-MvZtIvjUWrdMOwYgyQf" : {
+        "coach" : "Brandon Staley",
+        "conference" : "AFC",
+        "division" : "AFC West",
+        "established" : 1960,
+        "image" : "https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Los_Angeles_Chargers_logo.svg/260px-Los_Angeles_Chargers_logo.svg.png",
+        "losses" : 8,
+        "stadium" : "SoFi Stadium",
+        "superbowlTitles" : 0,
+        "teamName" : "Los Angeles Chargers",
+        "ties" : 0,
+        "wins" : 9
+      },
+      "-MvZuLJzlcFeDb7rKegN" : {
+        "coach" : "Mike McCarthy",
+        "conference" : "NFC",
+        "division" : "NFC East",
+        "established" : 1960,
+        "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Dallas_Cowboys.svg/260px-Dallas_Cowboys.svg.png",
+        "losses" : 5,
+        "stadium" : "AT&T Stadium",
+        "superbowlTitles" : 5,
+        "teamName" : "Dallas Cowboys",
+        "ties" : 0,
+        "wins" : 12
+      },
+      "-MvZvPJ_hFqLmQtcfpoS" : {
+        "coach" : "Brian Daboll",
+        "conference" : "NFC",
+        "division" : "NFC East",
+        "established" : 1925,
+        "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/New_York_Giants_logo.svg/260px-New_York_Giants_logo.svg.png",
+        "losses" : 13,
+        "stadium" : "MetLife Stadium",
+        "superbowlTitles" : 4,
+        "teamName" : "New York Giants",
+        "ties" : 0,
+        "wins" : 4
+      },
+      "-MvZvwoTQVDmOxXMt7ae" : {
+        "coach" : "Nick Sirianni",
+        "conference" : "NFC",
+        "division" : "NFC East",
+        "established" : 1933,
+        "image" : "https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Philadelphia_Eagles_logo.svg/260px-Philadelphia_Eagles_logo.svg.png",
+        "losses" : 8,
+        "stadium" : "Lincoln Financial Field",
+        "superbowlTitles" : 1,
+        "teamName" : "Philadelphia Eagles",
+        "ties" : 0,
+        "wins" : 9
+      },
+      "-MvZwa80vXCTavvaUq3t" : {
+        "coach" : "Ron Rivera",
+        "conference" : "NFC",
+        "division" : "NFC East",
+        "established" : 1932,
+        "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Washington_Commanders_logo.svg/260px-Washington_Commanders_logo.svg.png",
+        "losses" : 10,
+        "stadium" : "FedExField",
+        "superbowlTitles" : 3,
+        "teamName" : "Washington Commanders",
+        "ties" : 0,
+        "wins" : 7
+      },
+      "-MvZxfT_0cIDEnLCwpoV" : {
+        "coach" : "Sean McVay",
+        "conference" : "NFC",
+        "division" : "NFC West",
+        "established" : 1936,
+        "image" : "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/Los_Angeles_Rams_logo.svg/260px-Los_Angeles_Rams_logo.svg.png",
+        "losses" : 5,
+        "stadium" : "SoFi Stadium",
+        "superbowlTitles" : 1,
+        "teamName" : "Los Angeles Rams",
+        "ties" : 0,
+        "wins" : 12
+      },
+      "-MvZyO53KG2BKAopdih7" : {
+        "coach" : "Kliff Kingsbury",
+        "conference" : "NFC",
+        "division" : "NFC West",
+        "established" : 1898,
+        "image" : "https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Arizona_Cardinals_logo.svg/260px-Arizona_Cardinals_logo.svg.png",
+        "losses" : 6,
+        "stadium" : "State Farm Stadium",
+        "superbowlTitles" : 0,
+        "teamName" : "Arizona Cardinals",
+        "ties" : 0,
+        "wins" : 11
+      },
+      "-MvZz8n4DXxRX_cUiqqM" : {
+        "coach" : "Kyle Shanahan",
+        "conference" : "NFC",
+        "division" : "NFC West",
+        "established" : 1946,
+        "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/San_Francisco_49ers_logo.svg/260px-San_Francisco_49ers_logo.svg.png",
+        "losses" : 7,
+        "stadium" : "Levi's Stadium",
+        "superbowlTitles" : 5,
+        "teamName" : "San Francisco 49ers",
+        "ties" : 0,
+        "wins" : 10
+      },
+      "-MvZzmHhY2Ckla6KQ3HM" : {
+        "coach" : "Pete Carroll",
+        "conference" : "NFC",
+        "division" : "NFC West",
+        "established" : 1974,
+        "image" : "https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Seattle_Seahawks_logo.svg/260px-Seattle_Seahawks_logo.svg.png",
+        "losses" : 10,
+        "stadium" : "Lumen Field",
+        "superbowlTitles" : 1,
+        "teamName" : "Seattle Seahawks",
+        "ties" : 0,
+        "wins" : 7
+      }
+    },
+    "trades" : {
+      "-MvvsvXVv0D-UPnquQgJ" : {
+        "gradeTeam1" : 5,
+        "gradeTeam2" : 1,
+        "player1Ids" : [ "-Mv_MqWfoOOLcF6oCJh5" ],
+        "player2Ids" : [ "-Mv_Qm1sGs1UHVlp6KPv", "-Mv_RGogTgmWpgckte6h" ],
+        "team1Id" : "-MvZyO53KG2BKAopdih7",
+        "team2Id" : "-MvZuLJzlcFeDb7rKegN",
+        "timestamp" : "06:38 15.2.2022."
+      },
+      "-MvvxmUi1YTTgXroFccn" : {
+        "gradeTeam1" : 3,
+        "gradeTeam2" : 3,
+        "player1Ids" : [ "-Mv_IxjYhC_eiuO7dHs2" ],
+        "player2Ids" : [ "-Mv_7WEkQ07FKpDW_65a" ],
+        "team1Id" : "-MvZoUtnCHbgDYD2hvBa",
+        "team2Id" : "-MvZd6iEJ1BBmZRdm8n8",
+        "timestamp" : "06:59 15.2.2022."
+      },
+      "-Mvvykk9wnloLuHGConY" : {
+        "gradeTeam1" : 5,
+        "gradeTeam2" : 1,
+        "player1Ids" : [ "-Mv_OIYnIqz2UDMyd2WT" ],
+        "player2Ids" : [ "-Mv_Ijco4gsV7hVI4he6" ],
+        "team1Id" : "-MvZvPJ_hFqLmQtcfpoS",
+        "team2Id" : "-MvZnjS3x6v8CzsrojRo",
+        "timestamp" : "07:04 15.2.2022."
+      },
+      "-Mvw-l1o8h5SMssfXF-k" : {
+        "gradeTeam1" : 5,
+        "gradeTeam2" : 1,
+        "player1Ids" : [ "-Mv_IxjYhC_eiuO7dHs2" ],
+        "player2Ids" : [ "-Mv_R5PCmJNl3Am_rGY6" ],
+        "team1Id" : "-MvZd6iEJ1BBmZRdm8n8",
+        "team2Id" : "-MvZyO53KG2BKAopdih7",
+        "timestamp" : "07:12 15.2.2022."
+      }
+    }
+  },
+  "ucl" : {
+    "players" : {
+      "-Mva1qXmE_tnL1qEMkzg" : {
+        "age" : 25,
+        "name" : "Arjen Robben",
+        "position" : "RW",
+        "teamId" : "-Mv_UB636f7KIwGf0vfI"
+      },
+      "-Mva1wDaDmJW0HYytNkh" : {
+        "age" : 29,
+        "name" : "Ivica Olić",
+        "position" : "CF",
+        "teamId" : "-Mv_UB636f7KIwGf0vfI"
+      },
+      "-Mva24tAOv-Bo5PbJ6_e" : {
+        "age" : 31,
+        "name" : "Miroslav Klose",
+        "position" : "CF",
+        "teamId" : "-Mv_UB636f7KIwGf0vfI"
+      },
+      "-Mva2I7ICjH_0v-BcP7e" : {
+        "age" : 24,
+        "name" : "Bastian Schweinsteiger",
+        "position" : "CM",
+        "teamId" : "-Mv_UB636f7KIwGf0vfI"
+      },
+      "-Mva2jC3BRVtFwWS7XHO" : {
+        "age" : 19,
+        "name" : "Stevan Jovetić",
+        "position" : "CF",
+        "teamId" : "-Mv_ZRCe1VqgdUOALbit"
+      },
+      "-Mva7IAexZ2_ReJJMTIp" : {
+        "age" : 30,
+        "name" : "Adrian Mutu",
+        "position" : "CF",
+        "teamId" : ""
+      },
+      "-Mva7TA_5yZJ7oiHUa4j" : {
+        "age" : 24,
+        "name" : "Riccardo Montolivo",
+        "position" : "DMF",
+        "teamId" : "-Mv_UUKFNDRkFAjAKoQj"
+      },
+      "-Mva7v9scXuL5Gkb-e20" : {
+        "age" : 29,
+        "name" : "Sébastien Frey",
+        "position" : "GK",
+        "teamId" : "-Mv_UUKFNDRkFAjAKoQj"
+      },
+      "-Mva9SgJ_qNp7czmFtmw" : {
+        "age" : 27,
+        "name" : "Petr Cech",
+        "position" : "GK",
+        "teamId" : "-Mv_bRk6AnCjCHS_GZXu"
+      },
+      "-Mva9hJFY1AA3N0jhuw5" : {
+        "age" : 32,
+        "name" : "Michael Ballack",
+        "position" : "CM",
+        "teamId" : "-Mv_bRk6AnCjCHS_GZXu"
+      },
+      "-Mva9p6yYWwk5mb6ffan" : {
+        "age" : 31,
+        "name" : "Deco",
+        "position" : "AMF",
+        "teamId" : "-Mv_bRk6AnCjCHS_GZXu"
+      },
+      "-Mva9tSHA12cgUffN7qE" : {
+        "age" : 31,
+        "name" : "Didier Drogba",
+        "position" : "CF",
+        "teamId" : "-Mv_bRk6AnCjCHS_GZXu"
+      },
+      "-MvaANGiJoP2hiv5aQlh" : {
+        "age" : 27,
+        "name" : "Vasiliy Berezutski",
+        "position" : "CB",
+        "teamId" : "-Mv_aMBXyXCUkUMeu3cd"
+      },
+      "-MvaAkXn0UFMupaOtlho" : {
+        "age" : 23,
+        "name" : "Igor Akinfeev",
+        "position" : "GK",
+        "teamId" : "-Mv_aMBXyXCUkUMeu3cd"
+      },
+      "-MvaAqPAoIVDXsCHrKhi" : {
+        "age" : 19,
+        "name" : "Alan Dzagoev",
+        "position" : "CM",
+        "teamId" : "-Mv_aMBXyXCUkUMeu3cd"
+      },
+      "-MvaBB1qf_ztJlKryOgc" : {
+        "age" : 24,
+        "name" : "Miloš Krasić",
+        "position" : "RW",
+        "teamId" : "-Mv_aMBXyXCUkUMeu3cd"
+      },
+      "-MvaGLc4GcDg_he0bCdD" : {
+        "age" : 23,
+        "name" : "Jesús Navas",
+        "position" : "RB",
+        "teamId" : "-Mv_aavZOyNdsl2sjBg8"
+      },
+      "-MvaGaO0BmiOS3kd1BEA" : {
+        "age" : 28,
+        "name" : "Luís Fabiano",
+        "position" : "CF",
+        "teamId" : "-Mv_aavZOyNdsl2sjBg8"
+      },
+      "-MvaGiCHZoXHKWYQXr7G" : {
+        "age" : 23,
+        "name" : "Álvaro Negredo",
+        "position" : "CF",
+        "teamId" : "-Mv_aavZOyNdsl2sjBg8"
+      },
+      "-MvaGuvNnArE8iHE6Uf1" : {
+        "age" : 24,
+        "name" : "Adriano",
+        "position" : "LB",
+        "teamId" : "-Mv_aavZOyNdsl2sjBg8"
+      },
+      "-MvaHXgVVg14Vpd-nhzH" : {
+        "age" : 22,
+        "name" : "Hulk",
+        "position" : "CF",
+        "teamId" : "-Mv__ewUI_21nbwHDXo8"
+      },
+      "-MvaHcTTQfHbkCY6PDB0" : {
+        "age" : 23,
+        "name" : "Radamel Falcao",
+        "position" : "CF",
+        "teamId" : "-Mv__ewUI_21nbwHDXo8"
+      },
+      "-MvaHhh_bNFCGeAliW-N" : {
+        "age" : 26,
+        "name" : "Raúl Meireles",
+        "position" : "CM",
+        "teamId" : "-Mv__ewUI_21nbwHDXo8"
+      },
+      "-MvaHojW7bDTcqEaZhhb" : {
+        "age" : 27,
+        "name" : "Bruno Alves",
+        "position" : "CB",
+        "teamId" : "-Mv__ewUI_21nbwHDXo8"
+      },
+      "-MvaILeNkg9NDrH86lcI" : {
+        "age" : 22,
+        "name" : "Cesc Fàbregas",
+        "position" : "CM",
+        "teamId" : "-Mv_a-Y7ofFc-RLUjVdd"
+      },
+      "-MvaITC1XBVySbC5e6Xs" : {
+        "age" : 28,
+        "name" : "Andrey Arshavin",
+        "position" : "SS",
+        "teamId" : "-Mv_a-Y7ofFc-RLUjVdd"
+      },
+      "-MvaIZs46Zugni6Nz3UN" : {
+        "age" : 25,
+        "name" : "Robin van Persie",
+        "position" : "CF",
+        "teamId" : "-Mv_a-Y7ofFc-RLUjVdd"
+      },
+      "-MvaIjSMX7EVMtDjXxsa" : {
+        "age" : 23,
+        "name" : "Thomas Vermaelen",
+        "position" : "CB",
+        "teamId" : "-Mv_a-Y7ofFc-RLUjVdd"
+      },
+      "-MvaJ0tEZMHeTB7Mz65f" : {
+        "age" : 22,
+        "name" : "Sami Khedira",
+        "position" : "CM",
+        "teamId" : "-Mv_ZwnxW5-WWoXc8PUh"
+      },
+      "-MvaJ4voVA0qM2KS89xk" : {
+        "age" : 28,
+        "name" : "Aleksandr Hleb",
+        "position" : "AMF",
+        "teamId" : "-Mv_ZwnxW5-WWoXc8PUh"
+      },
+      "-MvaJBRqNBQyUiY_B7Vq" : {
+        "age" : 25,
+        "name" : "Pavel Pogrebnyak",
+        "position" : "CF",
+        "teamId" : "-Mv_ZwnxW5-WWoXc8PUh"
+      },
+      "-MvaJRDoz29Dn_RP71ve" : {
+        "age" : 28,
+        "name" : "Matthieu Delpierre",
+        "position" : "CB",
+        "teamId" : "-Mv_ZwnxW5-WWoXc8PUh"
+      },
+      "-MvaJhXjta2vjJeuTSWt" : {
+        "age" : 22,
+        "name" : "Lionel Messi",
+        "position" : "RW",
+        "teamId" : "-Mv__Od6-JHUnlpcJu0I"
+      },
+      "-MvaJnE1RVHe-pnHIjHv" : {
+        "age" : 29,
+        "name" : "Xavi",
+        "position" : "CM",
+        "teamId" : "-Mv__Od6-JHUnlpcJu0I"
+      },
+      "-MvaJqE4DhcGCMjgTQEk" : {
+        "age" : 25,
+        "name" : "Andrés Iniesta",
+        "position" : "CM",
+        "teamId" : "-Mv__Od6-JHUnlpcJu0I"
+      },
+      "-MvaK6O9kwutP8DiqBvR" : {
+        "age" : 27,
+        "name" : "Zlatan Ibrahimović",
+        "position" : "CF",
+        "teamId" : "-Mv__Od6-JHUnlpcJu0I"
+      },
+      "-MvaKFoQ4lH-HrJxG-Z2" : {
+        "age" : 19,
+        "name" : "Alexandre Pato",
+        "position" : "CF",
+        "teamId" : "-Mv_ZRCe1VqgdUOALbit"
+      },
+      "-MvaKQwj-HmQkBNGn0Um" : {
+        "age" : 30,
+        "name" : "Andrea Pirlo",
+        "position" : "DMF",
+        "teamId" : "-Mv_ZRCe1VqgdUOALbit"
+      },
+      "-MvaK_1SxKSG8M4aDsQM" : {
+        "age" : 29,
+        "name" : "Ronaldinho Gaúcho",
+        "position" : "CF",
+        "teamId" : "-Mv_ZRCe1VqgdUOALbit"
+      },
+      "-MvaLIn1Q8eL6IdtflOc" : {
+        "age" : 24,
+        "name" : "Thiago Silva",
+        "position" : "CB",
+        "teamId" : "-Mv_ZRCe1VqgdUOALbit"
+      },
+      "-MvaL_0E947sQL-RNftc" : {
+        "age" : 23,
+        "name" : "Wayne Rooney",
+        "position" : "CF",
+        "teamId" : "-Mv_Zjm3b7AQoDiceqmW"
+      },
+      "-MvaLdr_aytkv3_MngLo" : {
+        "age" : 28,
+        "name" : "Patrice Evra",
+        "position" : "LB",
+        "teamId" : "-Mv_Zjm3b7AQoDiceqmW"
+      },
+      "-MvaLiZdZ16Vui_ZOCWu" : {
+        "age" : 28,
+        "name" : "Dimitar Berbatov",
+        "position" : "CF",
+        "teamId" : "-Mv_Zjm3b7AQoDiceqmW"
+      },
+      "-MvaLrP5cDQ5hA-B0byF" : {
+        "age" : 22,
+        "name" : "Nani",
+        "position" : "LW",
+        "teamId" : "-Mv_Zjm3b7AQoDiceqmW"
+      },
+      "-MvaM0fs4bNqnFSCUONZ" : {
+        "age" : 26,
+        "name" : "Lisandro López",
+        "position" : "CF",
+        "teamId" : "-Mv_YTK0PdEXwJKIFKER"
+      },
+      "-MvaMCI0St84c3Jr0zrG" : {
+        "age" : 25,
+        "name" : "Jérémy Toulalan",
+        "position" : "DMF",
+        "teamId" : "-Mv_YTK0PdEXwJKIFKER"
+      },
+      "-MvaMHO4jcOJtisBlLcw" : {
+        "age" : 19,
+        "name" : "Miralem Pjanić",
+        "position" : "CM",
+        "teamId" : "-Mv_YTK0PdEXwJKIFKER"
+      },
+      "-MvaMNPcmyJIIk8-8xti" : {
+        "age" : 22,
+        "name" : "Hugo Lloris",
+        "position" : "GK",
+        "teamId" : "-Mv_YTK0PdEXwJKIFKER"
+      },
+      "-MvaMYgEunPcXwEeudfF" : {
+        "age" : 22,
+        "name" : "Yoann Gourcuff",
+        "position" : "AMF",
+        "teamId" : "-Mv_VsGno7o7_lD8uikC"
+      },
+      "-MvaMalxxsg8Q0puAN3g" : {
+        "age" : 25,
+        "name" : "Marouane Chamakh",
+        "position" : "CF",
+        "teamId" : "-Mv_VsGno7o7_lD8uikC"
+      },
+      "-MvaMgmiyzlIXKyDx8KS" : {
+        "age" : 27,
+        "name" : "Alou Diarra",
+        "position" : "DMF",
+        "teamId" : "-Mv_VsGno7o7_lD8uikC"
+      },
+      "-MvaN6aKLkXhRE4I6kXa" : {
+        "age" : 27,
+        "name" : "Wendel",
+        "position" : "LMF",
+        "teamId" : "-Mv_VsGno7o7_lD8uikC"
+      },
+      "-MvaNhm86ijHoudeNREe" : {
+        "age" : 31,
+        "name" : "Olof Mellberg",
+        "position" : "CB",
+        "teamId" : "-Mv_XScbUrGGGUKrw4-I"
+      },
+      "-MvaNpVmiwShSV-enFVs" : {
+        "age" : 29,
+        "name" : "Luciano Galletti",
+        "position" : "RW",
+        "teamId" : "-Mv_XScbUrGGGUKrw4-I"
+      },
+      "-MvaNxnRqfejljTrlgLC" : {
+        "age" : 24,
+        "name" : "Vasilios Torosidis",
+        "position" : "RB",
+        "teamId" : "-Mv_XScbUrGGGUKrw4-I"
+      },
+      "-MvaO8wDyduqRnqk0B6w" : {
+        "age" : 28,
+        "name" : "Raúl Bravo",
+        "position" : "CB",
+        "teamId" : "-Mv_XScbUrGGGUKrw4-I"
+      },
+      "-MvaOFFByrvWi_lyGs5H" : {
+        "age" : 24,
+        "name" : "Cristiano Ronaldo",
+        "position" : "CF",
+        "teamId" : "-Mv_Z0axGH5o1wxjyoqP"
+      },
+      "-MvaOIUdiuzoqNJcBotD" : {
+        "age" : 27,
+        "name" : "Kaká",
+        "position" : "AMF",
+        "teamId" : "-Mv_Z0axGH5o1wxjyoqP"
+      },
+      "-MvaONDGv4VAZX_O8kT5" : {
+        "age" : 21,
+        "name" : "Gonzalo Higuaín",
+        "position" : "CF",
+        "teamId" : "-Mv_Z0axGH5o1wxjyoqP"
+      },
+      "-MvaORI6-wsAWToC1Wd7" : {
+        "age" : 28,
+        "name" : "Iker Casillas",
+        "position" : "GK",
+        "teamId" : "-Mv_Z0axGH5o1wxjyoqP"
+      },
+      "-MvaOeHmWkdD71cyIK1W" : {
+        "age" : 30,
+        "name" : "Diego Milito",
+        "position" : "CF",
+        "teamId" : "-Mv_b55vT0ndwXep1fxH"
+      },
+      "-MvaOmAcy6f_NTvaBieD" : {
+        "age" : 25,
+        "name" : "Goran Pandev",
+        "position" : "CF",
+        "teamId" : "-Mv_b55vT0ndwXep1fxH"
+      },
+      "-MvaOt85lzGIFXXajnAP" : {
+        "age" : 35,
+        "name" : "Javier Zanetti",
+        "position" : "RB",
+        "teamId" : "-Mv_b55vT0ndwXep1fxH"
+      },
+      "-MvaOyDH4DaWp0rYcqEK" : {
+        "age" : 29,
+        "name" : "Júlio César",
+        "position" : "GK",
+        "teamId" : "-Mv_b55vT0ndwXep1fxH"
+      }
+    },
+    "teams" : {
+      "-Mv_UB636f7KIwGf0vfI" : {
+        "coach" : "Louis van Gaal",
+        "established" : 1900,
+        "image" : "https://tmssl.akamaized.net/images/wappen/head/27.png?lm=1498251238",
+        "stadium" : "Allianz Arena",
+        "teamName" : "Bayern Munich"
+      },
+      "-Mv_UUKFNDRkFAjAKoQj" : {
+        "coach" : "Cesare Prandelli",
+        "established" : 1926,
+        "image" : "https://tmssl.akamaized.net/images/wappen/head/430.png?lm=1520933432",
+        "stadium" : "Artemio Franchi",
+        "teamName" : "ACF Fiorentina"
+      },
+      "-Mv_VsGno7o7_lD8uikC" : {
+        "coach" : " Laurent Blanc",
+        "established" : 1881,
+        "image" : "https://tmssl.akamaized.net/images/wappen/head/40.png?lm=1627322046",
+        "stadium" : "Matmut Atlantique",
+        "teamName" : "FC Girondins Bordeaux"
+      },
+      "-Mv_XScbUrGGGUKrw4-I" : {
+        "coach" : "Božidar Bandović",
+        "established" : 1925,
+        "image" : "https://tmssl.akamaized.net/images/wappen/head/683.png?lm=1447787802",
+        "stadium" : "Stadio Georgios Karaiskakis",
+        "teamName" : "Olympiacos Piraeus"
+      },
+      "-Mv_YTK0PdEXwJKIFKER" : {
+        "coach" : "Claude Puel",
+        "established" : 1950,
+        "image" : "https://tmssl.akamaized.net/images/wappen/head/1041.png?lm=1581024966",
+        "stadium" : "Groupama Stadium",
+        "teamName" : "Olympique Lyon"
+      },
+      "-Mv_Z0axGH5o1wxjyoqP" : {
+        "coach" : "Manuel Pellegrini",
+        "established" : 1902,
+        "image" : "https://tmssl.akamaized.net/images/wappen/head/418.png?lm=1580722449",
+        "stadium" : "Santiago Bernabéu",
+        "teamName" : "Real Madrid"
+      },
+      "-Mv_ZRCe1VqgdUOALbit" : {
+        "coach" : "Leonardo",
+        "established" : 1899,
+        "image" : "https://tmssl.akamaized.net/images/wappen/head/5.png?lm=1605166627",
+        "stadium" : "San Siro",
+        "teamName" : "AC Milan"
+      },
+      "-Mv_Zjm3b7AQoDiceqmW" : {
+        "coach" : "Sir Alex Ferguson",
+        "established" : 1878,
+        "image" : "https://tmssl.akamaized.net/images/wappen/head/985.png?lm=1457975903",
+        "stadium" : "Old Trafford",
+        "teamName" : "Manchester United"
+      },
+      "-Mv_ZwnxW5-WWoXc8PUh" : {
+        "coach" : "Markus Babbel",
+        "established" : 1893,
+        "image" : "https://tmssl.akamaized.net/images/wappen/head/79.png?lm=1487024087",
+        "stadium" : "Mercedes-Benz Arena",
+        "teamName" : "VfB Stuttgart"
+      },
+      "-Mv__Od6-JHUnlpcJu0I" : {
+        "coach" : "Pep Guardiola",
+        "established" : 1899,
+        "image" : "https://tmssl.akamaized.net/images/wappen/head/131.png?lm=1406739548",
+        "stadium" : "Camp Nou",
+        "teamName" : "FC Barcelona"
+      },
+      "-Mv__ewUI_21nbwHDXo8" : {
+        "coach" : "Jesualdo Ferreira",
+        "established" : 1893,
+        "image" : "https://tmssl.akamaized.net/images/wappen/head/720.png?lm=1486310161",
+        "stadium" : "Estádio do Dragão",
+        "teamName" : "FC Porto"
+      },
+      "-Mv_a-Y7ofFc-RLUjVdd" : {
+        "coach" : "Arsène Wenger",
+        "established" : 1886,
+        "image" : "https://tmssl.akamaized.net/images/wappen/head/11.png?lm=1489787850",
+        "stadium" : "Emirates Stadium",
+        "teamName" : "Arsenal FC"
+      },
+      "-Mv_aMBXyXCUkUMeu3cd" : {
+        "coach" : "Zico",
+        "established" : 1911,
+        "image" : "https://tmssl.akamaized.net/images/wappen/head/2410.png?lm=1409222667",
+        "stadium" : "VEB Arena",
+        "teamName" : "CSKA Moscow"
+      },
+      "-Mv_aavZOyNdsl2sjBg8" : {
+        "coach" : "Manolo Jiménez",
+        "established" : 1890,
+        "image" : "https://tmssl.akamaized.net/images/wappen/head/368.png?lm=1408655455",
+        "stadium" : "Ramón Sánchez Pizjuan",
+        "teamName" : "Sevilla FC"
+      },
+      "-Mv_b55vT0ndwXep1fxH" : {
+        "coach" : "José Mourinho",
+        "established" : 1908,
+        "image" : "https://tmssl.akamaized.net/images/wappen/normquad/46_1404733860.png?lm=1404733860",
+        "stadium" : "Giuseppe Meazza",
+        "teamName" : "Inter Milan"
+      },
+      "-Mv_bRk6AnCjCHS_GZXu" : {
+        "coach" : "Carlo Ancelotti",
+        "established" : 1905,
+        "image" : "https://tmssl.akamaized.net/images/wappen/head/631.png?lm=1628160548",
+        "stadium" : "Stamford Bridge",
+        "teamName" : "Chelsea FC"
+      }
+    },
+    "transfers" : {
+      "-Mvtd528ONrxKdkv7heA" : {
+        "incomingId" : "",
+        "outgoingId" : "-Mv_UUKFNDRkFAjAKoQj",
+        "playerId" : "-Mva2jC3BRVtFwWS7XHO",
+        "timestamp" : "20:10 14.2.2022.",
+        "valueInMillions" : 0
+      },
+      "-MvtdJ9GezndKdk7H131" : {
+        "incomingId" : "-Mv_ZRCe1VqgdUOALbit",
+        "outgoingId" : "",
+        "playerId" : "-Mva2jC3BRVtFwWS7XHO",
+        "timestamp" : "20:11 14.2.2022.",
+        "valueInMillions" : 0
+      },
+      "-MvteplgXL7oQG8ALp3_" : {
+        "incomingId" : "",
+        "outgoingId" : "-Mv_UUKFNDRkFAjAKoQj",
+        "playerId" : "-Mva7v9scXuL5Gkb-e20",
+        "timestamp" : "20:17 14.2.2022.",
+        "valueInMillions" : 0
+      },
+      "-Mvtf4pqspzCtlMw6DgN" : {
+        "incomingId" : "-Mv_UUKFNDRkFAjAKoQj",
+        "outgoingId" : "",
+        "playerId" : "-Mva7v9scXuL5Gkb-e20",
+        "timestamp" : "20:18 14.2.2022.",
+        "valueInMillions" : 0
+      },
+      "-MvvztV-Op4M20-J_Z_Q" : {
+        "incomingId" : "-Mv_UUKFNDRkFAjAKoQj",
+        "outgoingId" : "",
+        "playerId" : "-Mva7v9scXuL5Gkb-e20",
+        "timestamp" : "07:08 15.2.2022.",
+        "valueInMillions" : 0
+      },
+      "-Mvw-Tgle0pkgPW0nbQj" : {
+        "incomingId" : "",
+        "outgoingId" : "-Mv_UUKFNDRkFAjAKoQj",
+        "playerId" : "-Mva7IAexZ2_ReJJMTIp",
+        "timestamp" : "07:11 15.2.2022.",
+        "valueInMillions" : 0
+      }
+    }
+  },
+  "users" : {
+    "-Mvp2gdNLcLH-rqJ9hzZ" : {
+      "admin" : false,
+      "email" : "vjeko@mail.hr",
+      "password" : "c3592ad763cac73a15466c0d3c10a77d",
+      "username" : "pec12"
+    },
+    "-Mvp3-bDj35GyJJ58tgD" : {
+      "admin" : true,
+      "email" : "admin@mail.hr",
+      "password" : "21232f297a57a5a743894a0e4a801fc3",
+      "username" : "admin"
+    }
+  }
+}
