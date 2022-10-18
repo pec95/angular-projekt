@@ -29,4 +29,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Upute
 
-Potrebna je prijava u aplikaciju. Za registraciju vrijedi obican korisnik, za admina podaci su admin admin
+Potrebna je prijava u aplikaciju. Za registraciju vrijedi obican korisnik, za admina podaci su admin admin.
