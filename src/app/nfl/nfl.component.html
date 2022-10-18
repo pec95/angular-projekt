@@ -1,0 +1,437 @@
+<div *ngIf="userLoggedIn" class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Timovi
+            </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <div class="teamRow">
+                    <div class="column">
+                        <div *ngFor="let team of teams1"><a [routerLink]="['tim', team.id]">{{team.teamName}}</a></div>
+                    </div>
+                    <div class="column">
+                        <div *ngFor="let team of teams2"><a [routerLink]="['tim', team.id]">{{team.teamName}}</a></div>
+                    </div>
+                    <div class="column">
+                        <div *ngFor="let team of teams3"><a [routerLink]="['tim', team.id]">{{team.teamName}}</a></div>
+                    </div>
+                </div>
+                
+                <button (click)="resetTeam()" style="margin-top: 10px;" *ngIf="admin" type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#teamModal">
+                    Kreiraj momčad
+                </button>
+  
+                <div class="modal fade" id="teamModal" tabindex="-1" aria-labelledby="teamModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="teamModalLabel">Kreiraj momčad</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <form [formGroup]="teamForm" (submit)="createTeam()">
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Naziv momčadi</label>
+                                        <input type="text" formControlName="teamName" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Trener</label>
+                                        <input type="text" formControlName="coach" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Stadion</label>
+                                        <input type="text" formControlName="stadium" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Godina osnutka</label>
+                                        <input type="number" formControlName="established" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Konferencija</label>
+                                        <select class="form-select">
+                                            <option value="AFC">AFC</option>
+                                            <option value="NFC">NFC</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Divizija</label>
+                                        <select class="form-select">
+                                            <option value="East">East</option>
+                                            <option value="West">West</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Pobjede</label>
+                                        <input type="number" formControlName="wins" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Izgubljene</label>
+                                        <input type="number" formControlName="losses" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Izjednačene</label>
+                                        <input type="number" formControlName="ties" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Naslovi</label>
+                                        <input type="number" formControlName="titles" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Slika (URL)</label>
+                                        <input type="text" formControlName="imageUrl" class="form-control" />
+                                    </div>
+                                </div>
+                                <div style="margin-top: 12px;">
+                                    <div class="text-danger" style="font-size: 16px;" *ngIf="errorTeam != ''">{{errorTeam}}</div>
+                                    <div class="text-success" *ngIf="successTeam != ''">{{successTeam}}</div>
+                                </div>                            
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-light">Kreiraj</button>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Poredak
+            </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-division-tab" data-bs-toggle="tab" data-bs-target="#nav-division" type="button" role="tab" aria-controls="nav-division" aria-selected="true">Divizije</button>
+                        <button class="nav-link" id="nav-conference-tab" data-bs-toggle="tab" data-bs-target="#nav-conference" type="button" role="tab" aria-controls="nav-conference" aria-selected="false">Konferencije</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-division" role="tabpanel" aria-labelledby="nav-division-tab">
+                        <h3 style="margin-top: 15px;">AFC East</h3>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Pozicija</th>
+                                    <th scope="col">Tim</th>
+                                    <th scope="col">Rekord</th>
+                                    <th scope="col">Postotak</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr *ngFor="let team of teams | filterString: 'division' : 'AFC East' | sort: 'winPercentage' : 'desc'; let i = index;">
+                                    <th scope="row">{{i + 1}}</th>
+                                    <td>{{team.teamName}}</td>
+                                    <td>{{team.wins}}-{{team.losses}}-{{team.ties}}</td>
+                                    <td>{{team.winPercentage}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3 style="margin-top: 15px;">AFC West</h3>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Pozicija</th>
+                                    <th scope="col">Tim</th>
+                                    <th scope="col">Rekord</th>
+                                    <th scope="col">Postotak</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr *ngFor="let team of teams | filterString: 'division' : 'AFC West' | sort: 'winPercentage' : 'desc'; let i = index;">
+                                    <th scope="row">{{i + 1}}</th>
+                                    <td>{{team.teamName}}</td>
+                                    <td>{{team.wins}}-{{team.losses}}-{{team.ties}}</td>
+                                    <td>{{team.winPercentage}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3 style="margin-top: 15px;">NFC East</h3>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Pozicija</th>
+                                    <th scope="col">Tim</th>
+                                    <th scope="col">Rekord</th>
+                                    <th scope="col">Postotak</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr *ngFor="let team of teams | filterString: 'division' : 'NFC East' | sort: 'winPercentage' : 'desc'; let i = index;">
+                                    <th scope="row">{{i + 1}}</th>
+                                    <td>{{team.teamName}}</td>
+                                    <td>{{team.wins}}-{{team.losses}}-{{team.ties}}</td>
+                                    <td>{{team.winPercentage}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3 style="margin-top: 15px;">NFC West</h3>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Pozicija</th>
+                                    <th scope="col">Tim</th>
+                                    <th scope="col">Rekord</th>
+                                    <th scope="col">Postotak</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr *ngFor="let team of teams | filterString: 'division' : 'NFC West' | sort: 'winPercentage' : 'desc'; let i = index;">
+                                    <th scope="row">{{i + 1}}</th>
+                                    <td>{{team.teamName}}</td>
+                                    <td>{{team.wins}}-{{team.losses}}-{{team.ties}}</td>
+                                    <td>{{team.winPercentage}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="nav-conference" role="tabpanel" aria-labelledby="nav-conference-tab">
+                        <h2 style="margin-top: 15px;">AFC</h2>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Pozicija</th>
+                                    <th scope="col">Tim</th>
+                                    <th scope="col">Rekord</th>
+                                    <th scope="col">Postotak</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr *ngFor="let team of teams | filterString: 'conference' : 'AFC' | sort: 'winPercentage' : 'desc'; let i = index;">
+                                    <th scope="row">{{i + 1}}</th>
+                                    <td>{{team.teamName}}</td>
+                                    <td>{{team.wins}}-{{team.losses}}-{{team.ties}}</td>
+                                    <td>{{team.winPercentage}}</td>
+                                </tr>
+                            </tbody>
+                        </table>   
+
+                        <h2 style="margin-top: 15px;">NFC</h2>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Pozicija</th>
+                                    <th scope="col">Tim</th>
+                                    <th scope="col">Rekord</th>
+                                    <th scope="col">Postotak</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr *ngFor="let team of teams | filterString: 'conference' : 'NFC' | sort: 'winPercentage' : 'desc'; let i = index;">
+                                    <th scope="row">{{i + 1}}</th>
+                                    <td>{{team.teamName}}</td>
+                                    <td>{{team.wins}}-{{team.losses}}-{{team.ties}}</td>
+                                    <td>{{team.winPercentage}}</td>
+                                </tr>
+                            </tbody>
+                        </table>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Svi igrači
+            </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <div class="playerRow">
+                    <ol>
+                        <div class="column">
+                            <li *ngFor="let player of players1">{{player.name}} ({{player.position}})</li>
+                        </div>
+                        <div class="column">
+                            <li *ngFor="let player of players2">{{player.name}} ({{player.position}})</li>
+                        </div>
+                        <div class="column">
+                            <li *ngFor="let player of players3">{{player.name}} ({{player.position}})</li>
+                        </div>
+                    </ol>
+                </div>
+                <br />
+                <button *ngIf="admin" (click)="resetPlayer()" type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#playerModal">
+                    Kreiraj igrača
+                </button>
+  
+                <div class="modal fade" id="playerModal" tabindex="-1" aria-labelledby="playerModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="playerModalLabel">Kreiraj igrača</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <form [formGroup]="playerForm" (submit)="createPlayer()">
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Ime</label>
+                                        <input type="text" formControlName="name" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Starost (18-45)</label>
+                                        <input type="number" formControlName="age" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Pozicija</label>
+                                        <input type="text" formControlName="position" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Momčad</label>
+                                        <select class="form-select">
+                                            <option *ngFor="let team of teams" value="{{team.id}}">{{team.teamName}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Vrijednost</label>
+                                        <div>
+                                            <i name="star" (click)="setRating(1)" class="fa fa-star"></i>
+                                            <i name="star" (click)="setRating(2)" class="fa fa-star"></i>
+                                            <i name="star" (click)="setRating(3)" class="fa fa-star"></i>
+                                            <i name="star" (click)="setRating(4)" class="fa fa-star"></i>
+                                            <i name="star" (click)="setRating(5)" class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 12px;">
+                                    <div class="text-danger" style="font-size: 16px;" *ngIf="errorPlayer != ''">{{errorPlayer}}</div>
+                                    <div class="text-success" *ngIf="successPlayer != ''">{{successPlayer}}</div>
+                                </div>                     
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-light">Kreiraj</button>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Razmjene igrača
+            </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <h4>Nova razmjena igrača</h4>             
+                <div class="tradeRow">
+                    <div class="columnTrade">
+                        <div class="row">
+                            <div class="col-md-8 form-group">
+                                <label>Klub #1</label>
+                                <select class="form-select">
+                                    <option *ngFor="let team of teams" value="{{team.id}}">{{team.teamName}}</option>
+                                </select>   
+                            </div>
+                            <div *ngIf="team1Id != ''" class="col-md-8">
+                                <div *ngFor="let player of players | filterString: 'teamId' : team1Id; let i = index;">
+                                    {{player.name}}
+                                    <i name="trade1" class="fa-solid fa-right-long" (click)="getTradePlayers1(player.id, i)"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <button id="showPlayers1" class="btn btn-secondary" (click)="showPlayers1()" style="margin-top: 10px;">Pokaži igrače</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columnTrade">
+                        <div class="row">
+                            <div class="col-md-8 form-group">
+                                <label>Klub #2</label>
+                                <select class="form-select">
+                                    <option *ngFor="let team of teams" value="{{team.id}}">{{team.teamName}}</option>
+                                </select>   
+                            </div>
+                            <div *ngIf="team2Id != ''" class="col-md-8">
+                                <div *ngFor="let player of players | filterString: 'teamId' : team2Id; let i = index;">
+                                    <i name="trade2" class="fa-solid fa-left-long" (click)="getTradePlayers2(player.id, i)"></i>
+                                    {{player.name}}
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <button id="showPlayers2" class="btn btn-secondary" (click)="showPlayers2()" style="margin-top: 10px;">Pokaži igrače</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                    
+                <div *ngIf="team1Id != '' && team2Id != ''" style="margin-top: 10px;">
+                    <button class="btn btn-primary" (click)="trade()">Napravi razmjenu</button>
+                </div>
+                <div style="margin-top: 12px;">
+                    <div class="text-danger text-center" style="font-size: 16px;" *ngIf="errorTrade != ''">{{errorTrade}}</div>
+                    <div class="text-success text-center" *ngIf="successTrade != ''">{{successTrade}}</div>
+                </div>
+
+                <button style="margin-top: 10px;" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#tradesModal" (click)="showTrades()">
+                    Pokaži sve razmjene
+                </button>
+    
+                <div class="modal fade" id="tradesModal" tabindex="-1" aria-labelledby="tradesModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div *ngFor="let trade of trades; let i = index;">
+                                <h3>Razmjena #{{i + 1}} ({{trade.timestamp}})</h3>
+                                <p>Tim {{trade.team1}} dobiva: <span *ngFor="let player2 of trade.players2">{{player2}}</span></p>
+                                <p>Tim {{trade.team2}} dobiva: <span *ngFor="let player1 of trade.players1">{{player1}}</span></p>
+                                <p *ngIf="trade.gradeTeam1 > trade.gradeTeam2">Analiza: {{trade.team1}} je bolje prošao!</p>
+                                <p *ngIf="trade.gradeTeam2 > trade.gradeTeam1">Analiza: {{trade.team2}} je bolje prošao!</p>
+                                <p *ngIf="trade.gradeTeam2 == trade.gradeTeam1">Analiza: timovi su prošli jednako!</p>
+                            </div>
+                        </div>      
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="!userLoggedIn">
+    <h4 class="text-danger">Niste prijavljeni!</h4>
+</div>

@@ -1,0 +1,155 @@
+<div *ngIf="userLoggedIn">
+<div *ngIf="teamUcl != undefined">
+    <div style="height: 55px;">
+        <h4 style="display: inline-block;">{{teamUcl.teamName}}</h4>
+
+        <button style="display: inline-block; margin-left: 17px;" *ngIf="admin" type="button" class="btn btn-danger ed" data-bs-toggle="modal" data-bs-target="#uclTeamDeleteModal">
+            Izbriši
+        </button>
+
+        <div class="modal fade" id="uclTeamDeleteModal" tabindex="-1" aria-labelledby="uclTeamDeleteModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-body">
+                    <h5 class="modal-title">Potvrdi brisanje za {{teamUcl.teamName}}</h5><br />
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="margin-right: 7px;">Odustani</button>
+                    <button (click)="deleteUclTeam(teamUcl.id)" [routerLink]="['', 'nogomet']" data-bs-dismiss="modal" class="btn btn-danger">Izbriši</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div>
+        <img src="{{teamUcl.image}}" />
+        <div class="title">Trener</div>
+        <div>{{teamUcl.coach}}</div><br />
+        <div class="title">Osnovano</div>
+        <div>{{teamUcl.established}}.</div><br />
+        <div class="title">Stadion</div>
+        <div>{{teamUcl.stadium}}</div><br />
+        <div class="title">Igrači</div>
+        <div style="margin-top: 12px;" class="text-success" *ngIf="successUclPlayer != ''">{{successUclPlayer}}</div>
+        <ul>
+            <li *ngFor="let player of playersUcl; let i = index;">
+                {{player.name}} ({{player.position}}, {{player.age}} godina)
+                <div *ngIf="admin">
+                    <div *ngIf="uclEdits[i]">
+                        <form>                            
+                            <div class="row">
+                                <div class="col-md-3 form-group">
+                                    <label>Ime</label>
+                                    <input type="text" name="nameUcl" [(ngModel)]="playerEditUcl[i].name" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 form-group">
+                                    <label>Starost (18-45)</label>
+                                    <input type="number" name="ageUcl" [(ngModel)]="playerEditUcl[i].age" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 form-group">
+                                    <label>Pozicija</label>
+                                    <input type="text" name="positionUcl" [(ngModel)]="playerEditUcl[i].position" class="form-control" />
+                                </div>
+                            </div>                                                            
+                            <div class="text-danger" style="font-size: 16px; margin-top: 12px;" *ngIf="errorUclPlayer != ''">{{errorUclPlayer}}</div>
+                            <button type="button" class="btn btn-success ed" (click)="editUclPlayer(player.id, i)">Završi uređivanje</button>    
+                        </form>    
+                    </div>               
+                    
+                    <button name="resetUcl" [ngClass]="editText[i] === 'Uredi' ? 'btn btn-primary' : 'btn btn-secondary'" type="button" class="ed" (click)="resetUcl(i)">
+                        {{editText[i]}}
+                    </button>
+                    <button type="button" class="btn btn-danger ed" (click)="deleteUclPlayer(player.id)">Izbriši</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div *ngIf="teamNfl != undefined">   
+    <div style="height: 55px;">
+        <h4 style="display: inline-block;">{{teamNfl.teamName}}</h4>
+        
+        <button style="display: inline-block; margin-left: 17px;" *ngIf="admin" type="button" class="btn btn-danger ed" data-bs-toggle="modal" data-bs-target="#nflTeamDeleteModal">
+            Izbriši
+        </button>
+
+        <div class="modal fade" id="nflTeamDeleteModal" tabindex="-1" aria-labelledby="nflTeamDeleteModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-body">
+                    <h5 class="modal-title">Potvrdi brisanje za {{teamNfl.teamName}}</h5><br />
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="margin-right: 7px;">Odustani</button>
+                    <button (click)="deleteNflTeam(teamNfl.id)" [routerLink]="['', 'nfl']" data-bs-dismiss="modal" class="btn btn-danger">Izbriši</button>
+                </div>
+                </div>
+            </div>
+        </div>  
+    </div>      
+    <br />
+    <div>
+        <img src="{{teamNfl.image}}" />
+        <div class="title">Trener</div>
+        <div>{{teamNfl.coach}}</div><br />
+        <div class="title">Osnovano</div>
+        <div>{{teamNfl.established}}.</div><br />
+        <div class="title">Stadion</div>
+        <div>{{teamNfl.stadium}}</div><br />
+        <div class="title">Divizija</div>
+        <div>{{teamNfl.division}}</div><br />        
+        <div class="title">Naslovi</div>
+        <div>{{teamNfl.superbowlTitles}}</div><br />
+        <div class="title">Igrači</div>
+        <div class="text-success" style="margin-top: 12px;" *ngIf="successNflPlayer != ''">{{successNflPlayer}}</div>
+        <ul>
+            <li *ngFor="let player of playersNfl; let i = index;">
+                {{player.name}} ({{player.position}}, {{player.age}} godina)
+                <div *ngIf="admin">
+                    <div *ngIf="nflEdits[i]">
+                        <form>                            
+                            <div class="row">
+                                <div class="col-md-3 form-group">
+                                    <label>Ime</label>
+                                    <input type="text" name="nameNfl" [(ngModel)]="playerEditNfl[i].name" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 form-group">
+                                    <label>Starost (18-45)</label>
+                                    <input type="number" name="ageNfl" [(ngModel)]="playerEditNfl[i].age" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 form-group">
+                                    <label>Pozicija</label>
+                                    <input type="text" name="positionNfl" [(ngModel)]="playerEditNfl[i].position" class="form-control" />
+                                </div>
+                            </div>                                
+                            <div class="row">
+                                <div class="col-md-3 form-group">
+                                    <label>Vrijednost (1-5)</label>
+                                    <div>
+                                        <input type="number" name="valueNfl" [(ngModel)]="playerEditNfl[i].value" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-danger" style="font-size: 16px; margin-top: 12px;" *ngIf="errorNflPlayer != ''">{{errorNflPlayer}}</div>
+                        </form> 
+                        <button type="button" class="btn btn-success ed" (click)="editNflPlayer(player.id, i)">Završi uređivanje</button>       
+                    </div>               
+                    
+                    <button name="resetNfl" [ngClass]="editText[i] === 'Uredi' ? 'btn btn-primary' : 'btn btn-secondary'" type="button" class="ed" (click)="resetNfl(i)">
+                        {{editText[i]}}
+                    </button>
+                    <button type="button" class="btn btn-danger ed" (click)="deleteNflPlayer(player.id)">Izbriši</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+<div *ngIf="!userLoggedIn">
+    Niste prijavljeni!
+</div>

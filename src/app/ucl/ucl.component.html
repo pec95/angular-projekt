@@ -1,0 +1,236 @@
+<div *ngIf="userLoggedIn" class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Klubovi
+            </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <div class="teamRow">
+                    <div class="column">
+                        <div *ngFor="let team of teams1"><a [routerLink]="['tim', team.id]">{{team.teamName}}</a></div>
+                    </div>
+                    <div class="column">
+                        <div *ngFor="let team of teams2"><a [routerLink]="['tim', team.id]">{{team.teamName}}</a></div>
+                    </div>
+                    <div class="column">
+                        <div *ngFor="let team of teams3"><a [routerLink]="['tim', team.id]">{{team.teamName}}</a></div>
+                    </div>
+                </div>
+                <button (click)="resetTeam()" *ngIf="admin" style="margin-top: 10px;" type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#teamModal">
+                    Kreiraj klub
+                </button>
+    
+                <div class="modal fade" id="teamModal" tabindex="-1" aria-labelledby="teamModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="teamModalLabel">Kreiraj klub</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <form [formGroup]="teamForm" (submit)="createTeam()">
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Ime kluba</label>
+                                        <input type="text" formControlName="teamName" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Trener</label>
+                                        <input type="text" formControlName="coach" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Stadion</label>
+                                        <input type="text" formControlName="stadium" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Godina osnutka</label>
+                                        <input type="number" formControlName="established" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Slika (URL)</label>
+                                        <input type="text" formControlName="imageUrl" class="form-control" />
+                                    </div>
+                                </div>
+                                <div style="margin-top: 12px;">
+                                    <div class="text-danger" style="font-size: 16px;" *ngIf="errorTeam != ''">{{errorTeam}}</div>
+                                    <div class="text-success" *ngIf="successTeam != ''">{{successTeam}}</div>
+                                </div>                            
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-light">Kreiraj</button>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Svi igrači
+            </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <div class="playerRow">
+                    <ol>
+                        <div class="column">
+                            <li *ngFor="let player of players1">{{player.name}} ({{player.position}})</li>
+                        </div>
+                        <div class="column">
+                            <li *ngFor="let player of players2">{{player.name}} ({{player.position}})</li>
+                        </div>
+                        <div class="column">
+                            <li *ngFor="let player of players3">{{player.name}} ({{player.position}})</li>
+                        </div>
+                    </ol>
+                </div>
+                <br />
+                <button (click)="resetPlayer()" *ngIf="admin" style="margin-top: 10px;" type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#playerModal">
+                    Kreiraj igrača
+                </button>
+  
+                <div class="modal fade" id="playerModal" tabindex="-1" aria-labelledby="playerModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="playerModalLabel">Kreiraj igrača</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <form [formGroup]="playerForm" (submit)="createPlayer()">
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Ime</label>
+                                        <input type="text" formControlName="name" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Starost (18-45)</label>
+                                        <input type="number" formControlName="age" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Pozicija</label>
+                                        <input type="text" formControlName="position" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 form-group">
+                                        <label>Klub</label>
+                                        <select class="form-select">
+                                            <option value="">Bez kluba</option>
+                                            <option *ngFor="let team of teams" value="{{team.id}}">{{team.teamName}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 12px;">
+                                    <div class="text-danger" style="font-size: 16px;" *ngIf="errorPlayer != ''">{{errorPlayer}}</div>
+                                    <div class="text-success" *ngIf="successPlayer != ''">{{successPlayer}}</div>
+                                </div>                     
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-light">Kreiraj</button>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Transferi
+            </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">   
+                <h4>Novi transfer</h4>             
+                <div class="transferRow">
+                    <div class="columnTransfer">
+                        <div class="row">
+                            <div class="col-md-8 form-group">
+                                <label>Klub odlazni</label>
+                                <select class="form-select">
+                                    <option value="">Bez kluba</option>
+                                    <option *ngFor="let team of teams" value="{{team.id}}">{{team.teamName}}</option>
+                                </select>   
+                            </div>
+                            <div *ngIf="playersTransfer.length > 0" class="col-md-8">
+                                <div *ngFor="let playerTransfer of playersTransfer; let i = index;">
+                                    {{playerTransfer.name}}
+                                    <i class="fa-solid fa-right-left" (click)="getTransferPlayer(playerTransfer.id, i)"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <button id="showPlayers" class="btn btn-secondary" (click)="showPlayers()" style="margin-top: 10px;">Pokaži igrače</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columnTransfer">
+                        <div class="row">
+                            <div class="col-md-8 form-group">
+                                <label>Klub dolazni</label>
+                                <select class="form-select">
+                                    <option value="">Bez kluba</option>
+                                    <option *ngFor="let team of teams" value="{{team.id}}">{{team.teamName}}</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>                    
+                <div *ngIf="playerIndex >= 0" style="margin-top: 10px;">
+                    <label>Vrijednost transfera (milijuni €)</label>
+                    <input type="number" name="value" [(ngModel)]="valueTransfer" class="form-control" style="width: 160px;" />
+                    <button class="btn btn-primary" (click)="transfer()">Pošalji transfer</button>
+                </div>
+                <div style="margin-top: 12px;">
+                    <div class="text-danger text-center" style="font-size: 16px;" *ngIf="errorTransfer != ''">{{errorTransfer}}</div>
+                    <div class="text-success text-center" *ngIf="successTransfer != ''">{{successTransfer}}</div>
+                </div>
+
+                <button style="margin-top: 10px;" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#transfersModal" (click)="showTransfers()">
+                    Pokaži sve transfere
+                </button>
+    
+                <div class="modal fade" id="transfersModal" tabindex="-1" aria-labelledby="transfersModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div *ngFor="let transfer of transfers; let i = index;">
+                                <h3>Transfer #{{i + 1}} ({{transfer.timestamp}})</h3>
+                                <p>Igrač: {{transfer.player}}</p>
+                                <p>Odlazi iz: {{transfer.outgoing}}</p>
+                                <p>Dolazi u: {{transfer.incoming}}</p>
+                                <p>Vrijednost u milijunima: {{transfer.valueInMillions}}€</p>
+                            </div>
+                        </div>      
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="!userLoggedIn">
+    <h4 class="text-danger">Niste prijavljeni!</h4>
+</div>

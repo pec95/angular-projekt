@@ -1,0 +1,22 @@
+<div *ngIf="!userLoggedIn" style="margin: 7px 0 0 8px;" class="container">
+    <form>
+        <div class="row">
+            <div class="col-md-4 form-group">
+                <label>Korisničko ime:</label>
+                <input type="text" name="username" [(ngModel)]="username" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 form-group">
+                <label>Lozinka:</label>
+                <input type="password" name="pass" [(ngModel)]="pass" class="form-control" />
+            </div>
+        </div>
+        <span class="text-danger" style="font-size: 16px;">{{error}}</span><br/>
+        <button (click)="login()" class="btn btn-light" style="margin-top: 15px;">Prijavi se</button>
+        <button class="btn btn-success" style="margin: 15px 0 0 7px" [routerLink]="['', 'registracija']">Registracija</button>
+    </form>
+</div>
+<div *ngIf="userLoggedIn">
+    <h3>Već je prijavljen korisnik</h3>
+</div>

@@ -1,0 +1,19 @@
+label {
+    font-weight: 600;
+}
+
+input, select {
+    margin-bottom: 7px;
+}
+
+.checked {
+    color: orange;
+}
+
+i {
+    font-size: 25px;
+}
+
+.modal-body span {
+    margin-right: 5px;
+}

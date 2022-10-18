@@ -1,0 +1,39 @@
+<div *ngIf="!userLoggedIn" style="margin: 7px 0 0 8px;" class="container">
+    <h3>Registracija</h3>
+    <form [formGroup]="form" (submit)="register()">
+        <div class="row">
+            <div class="col-md-5 form-group">
+                <label>Korisničko ime:</label>
+                <input type="text" formControlName="username" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 form-group">
+                <label>Lozinka:</label>
+                <input type="password" formControlName="pass1" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 form-group">
+                <label>Lozinka (ponovljena):</label>
+                <input type="password" formControlName="pass2" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 form-group">
+                <label>E-mail:</label>
+                <input type="email" formControlName="email" class="form-control" />
+            </div>
+        </div>
+        <button type="submit" class="btn btn-secondary" style="margin-top: 15px;">Registrirajte se</button>
+    </form>
+    <div class="row" style="margin: 12px 0 0 7px;">
+        <ul class="col-md-5">
+            <li *ngFor="let error of errors" class="text-danger" style="font-size: 16px;">{{error}}</li>
+        </ul>
+    </div>
+    <div class="text-success" *ngIf="success != ''">{{success}}</div>
+</div>
+<div *ngIf="userLoggedIn">
+    <h3>Već je prijavljen korisnik</h3>
+</div>

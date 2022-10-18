@@ -1,0 +1,71 @@
+a:link, a:visited {
+    text-decoration: none;
+    color: #1A3151;
+}
+
+a:hover {
+    color: #5F6D90;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+/*.form-control:focus, .form-select:focus {
+    outline: none !important;
+    border-color: #1A3151;
+    box-shadow: 0 0 8px #1A3151;
+}*/
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+footer {
+    padding: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.columnTransfer, .columnTrade {
+    float: left;
+    width: 50%;
+}
+  
+.teamRow:after, .playerRow:after, .transferRow:after, .tradeRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        width: 100%;
+    }
+
+    .card {
+        margin-top: 34px;
+    }
+}

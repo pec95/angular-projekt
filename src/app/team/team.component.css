@@ -1,0 +1,21 @@
+.title {
+    font-weight: bold;
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+.ed {
+    margin-left: 6px;
+    margin-bottom: 7px;
+    margin-top: 10px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input, select {
+    margin-bottom: 7px;
+}

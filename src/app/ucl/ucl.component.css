@@ -1,0 +1,11 @@
+label {
+    font-weight: 600;
+}
+
+input, select {
+    margin-bottom: 7px;
+}
+
+.fa-right-left {
+    font-size: 16px;
+}
